@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="tests" thread-count="2">
+
+	<listeners>
+		<listener class-name="com.actyv.listeners.TestNGListeners" />
+	</listeners>
+
+		<test name="Title assertion">
+		<parameter name="username" value="Pradeep kumar" />
+		<parameter name="user" value="Automation Tester" />
+		
+		<parameter name="UsernameValidation" value="Please enter a valid email id" />
+		<parameter name ="PasswordValidation" value= "Please enter a valid password" />
+		
+		<parameter name="HelpMenuText" value="Your one stop solution" />
+		<parameter name="GrievanceMenuText" value="Grievance redressal" />
+		
+		<parameter name="PhoneNumberValidationText" value="Enter a valid phone number." />
+		<parameter name="NewPasswordValidationText" value="Please enter a valid password" />
+		<parameter name="ConfirmPasswordValidationText" value="Confirm password does not match." />
+		<parameter name="VerificationCodeValidationText" value="Please enter a valid verification code." />
+		
+		
+		<parameter name="Label1" value="Dashboard" />
+		<parameter name ="DashboardPageTitle" value= "Dashboard" />
+		
+		<parameter name="Label2" value="Application List" />
+		<parameter name ="ApplicationListTitle" value= "Application List" />
+		
+		<parameter name="Label3" value="Approver Inbox" />
+		<parameter name ="ApproverInboxTitle" value= "Inbox" />
+		
+		<parameter name="Label4" value="Invite Business Partner" />
+		<parameter name ="InviteBusinessPartnerTitle" value= "Invite Business Partner" />
+		
+		<parameter name="Label5" value="Reports" />
+		<parameter name ="ReportsTitle" value= "Configure the Report" />
+		
+		<parameter name="Label6" value="Business Partner List" />
+		<parameter name ="BusinessPartnerListTitle" value= "Business Partner List" />
+		
+		<parameter name="Label7" value="Market Survey" />
+		<parameter name="Label8" value="Distributors Data" />
+		
+		<parameter name="Label9" value="User Management" />
+		<parameter name ="UserManagementTitle" value= "User Management" />
+		
+	
+		<parameter name ="TerritoryManagementTitle" value= "Territory Management" />
+		<parameter name ="RoleManagementTitle" value= "Role Management" />
+		<parameter name ="InvoicesApprovalTitle" value= "INVOICES" />
+		<parameter name ="FilesTitle" value= "Invoice File Upload" />
+		<parameter name ="InvoiceSummaryTitle" value= "Invoice Summary" />
+		<parameter name ="DrawdownsTitle" value= "Drawdown Summary" />
+		<parameter name ="DailyLedgerTitle" value= "Daily Ledger" />
+		<parameter name ="BorrowerSummaryTitle" value= "Business Partner Summary" />
+		<parameter name ="ScoreTitle" value= "Business Partner List" />
+		<parameter name ="SubmittedOpportunitiesTitle" value= "OPPORTUNITY NAME" />
+		<parameter name ="InsuranceListTitle" value= "Insurances Product Listing" />
+		<parameter name ="SupportPageTitle" value= "actyv.ai® Customer Portal" />
+		<parameter name="VendorApproval" value="Vendor Invoice Approval"/>
+		<parameter name="MandatesTitle" value='Mandates'/>
+		
+		<parameter name="ApplicationListTitle" value="All Applications" />
+		<parameter name="ApplicationListSearchBarText" value="Test" />
+		<parameter name="applicationDetailsPageTitle" value="Application Details" />
+		<parameter name="WizardTypeFilter" value="A Wizard Testing Only" />
+		<parameter name="DocumentCaptureStatusFilter" value="Document Capture" />
+		
+		<parameter name="DSERoleFilter" value="DSE" />
+		<parameter name="EastTerritoryFilter" value="East" ><parameter name="UnderReviewStatusFilter" value="Under Review" /></parameter>
+		
+		<parameter name="UserManagementTitle" value="User Management" />
+		<parameter name="UMTableBPName" value="NAME" />
+		<parameter name="UMTableAccessName" value="ROLE(S)" />
+		<parameter name="UMTableContactName" value="MOBILE NO." />
+		<parameter name="UMTableTerritoryColumnHeaderName" value="TERRITORY" />
+		<parameter name="UMTableBPSupColumnHeaderName" value="SUPERVISOR" />
+		<parameter name="UMTableLobHeaderName" value="LINE OF BUSINESS" />
+		<parameter name="UMTableActionHeaderName" value="ACTIONS" />
+		<parameter name="VerifyUserManagementDownloadText" value="Download Template" />
+		<parameter name="VerifyUserManagementImportText" value="IMPORT USERS" />
+		
+		<parameter name="UserPreferenceTitle" value="User Preferences" />
+		<parameter name="CustomYourUserPreferenceTitle" value="Customize your preferences" />
+		<parameter name="genTextF" value="General" />
+		<parameter name="profileWord" value="Profile" />
+		<parameter name="imageWord" value="Image" />
+		<parameter name="aWord" value="A" />
+		<parameter name="tWord" value="T" />
+		<parameter name="nameWord" value="NAME" />
+		<parameter name="nameWordvalue" value="Automation Tester" />
+		<parameter name="emailWord" value="Email" />
+		<parameter name="emailWordvalue" value="nikil.s.external+tester@actyv.com" />
+		<parameter name="boldText" value="Preferences" />
+		<parameter name="languageText" value="Languages" />
+		
+		<parameter name="InboxPageTitle" value="Inbox" />
+		<parameter name="BusinessPartnerBusinessColumn" value="BUSINESS PARTNER" />
+		<parameter name="TypeColumn" value="TYPE" />
+		<parameter name="StatusColumn" value="STATUS" />
+		<parameter name="AssigneesColumn" value="ASSIGNEES" />
+		<parameter name="TerritoryColumn" value="Territory" />
+		<parameter name="StartDateColumn" value="START DATE" />
+		<parameter name="LastUpdateColumn" value="LAST UPDATE" />
+		<parameter name="SearchBarText" value="Test" />
+		<parameter name="SearchBarTexta" value="a" />
+		<parameter name="TerritoryManagementPageTitle" value="Territory Management" />
+		
+		<parameter name="rmHeaderText" value="Role Management" />
+		<parameter name="rMCNameColHdr" value="ROLE NAME" />
+		<parameter name="rMdispNameColHdr" value="DISPLAY NAME" />
+		<parameter name="rMpermissionNameColHdr" value="PERMISSION(S)" />
+		<parameter name="rMActionNameColHdr" value="ACTION" />
+		<parameter name="verifyRMCreateNewModelText" value="Create Role" />
+		<parameter name="verifyRMCreateNewModelnameText" value="Role Name" />
+		<parameter name="verifyRMCreateNewModelDisplName" value="Display Name" />
+		<parameter name="verifyRMCreateNewModelPermisionName" value="Select Permission(s)" />
+	    <parameter name="InvitePageTitle" value="Invite Business Partner" />
+		<parameter name="InvitePageSubHeading" value="Tell us about the business to send the invite." />
+		<parameter name="InviteHistoryPageTitle" value="Invite History" />
+		<parameter name="GSTApplicationTypeName" value="Onboarding GSTR" />
+		<parameter name="ApplicantMobile" value="8976765555" />
+		<parameter name="ApplicantEmail" value="keerthivsanjay@gmail.com" />
+		
+		
+		<parameter name="LatestDate" value="Latest Date" />
+		<parameter name="scores" value="SCORE" />
+		<parameter name="ehrtype" value="EHR Type" />
+		<parameter name="rank" value="actyv Rank" />
+		<parameter name="insurancescore" value="Acytv Insurance Score" />
+		<parameter name="digitalscore" value="Actyv Digital Score" />
+		<parameter name="esgscore" value="Actyv ESG Score" />
+		<parameter name="ddrscore" value="Actyv DDR Scoree" />
+		<parameter name="Financialmgmnt" value="Finacial Management" />
+		<parameter name="financialstanding" value="Financial Standing" />
+		<parameter name="accesstofinance" value="Access to Finance" />
+		<parameter name="insuranceriskscore" value="Insurance Risk Score" />
+		<parameter name="survivalandstability" value="Survival And Stability" />
+		<parameter name="revenuepotential" value="Revenue Potential" />
+		<parameter name="actions" value="ACTIONS" />
+		<parameter name="actyvscore" value="actyv Score"></parameter>
+		<parameter name="financialOverview" value="Financial Overview"></parameter>
+		<parameter name="report" value="Enterprise Health Report - Silver"></parameter>
+		<parameter name="financialelements" value="FINANCIAL ELEMENTS"></parameter>
+		<parameter name="liquidratios" value="LIQUIDITY RATIOS"></parameter>
+		<parameter name="profit" value="PROFITABILITY RATIO"></parameter>
+		<parameter name="workcapital" value="WORKING CAPITAL DAYS"></parameter>
+		<parameter name="distributoroverview" value="Distributor’s Overview"></parameter>
+		<parameter name="insurancerisk1" value="Insurance Risk"></parameter>
+		<parameter name="Financialmgmnt1" value="Financial Management" />
+		<parameter name="financialstanding1" value="Financial Standing" />
+		<parameter name="accesstofinance1" value="Access to Finance" />
+		<parameter name="survivalandstability1" value="Survival And Stability" />
+		<parameter name="revenuepotential1" value="Revenue Potential" />
+		<parameter name="banking" value="BANKING ELEMENTS"></parameter>
+		<parameter name="Gstdelays" value="GST PAYMENT DELAYS"></parameter>
+		<parameter name="distributoroverview" value="Distributor’s Overview"></parameter>
+		<parameter name="ScoreEnterpriseSearchBarText" value="Test" />
+		<parameter name="BusinessPartnertitle" value="Business Partner List"></parameter>
+		<parameter name="actyvscoretitle" value="actyv Score Detail View"></parameter>
+		
+		<parameter name="BPText" value="Business Profile"></parameter>
+		<parameter name="BPLegalName" value="Legal Name of Business:"></parameter>
+		<parameter name="BP_RegDate" value="Effective date of registration:"></parameter>
+		<parameter name="BPReg_D_Placeholder" value="01/07/2017"></parameter>
+		<parameter name="BPGSTINStatus" value="GSTIN / UIN Status:"></parameter>
+		<parameter name="BPGSTINStatus_Placeholder" value="Active"></parameter>
+		<parameter name="trandename" value="Trade Name"></parameter>
+		<parameter name="tradeNamePlaceholder" value="GSTN"></parameter>
+		<parameter name="constit" value="Constitution of Business"></parameter>
+		<parameter name="constiti_placeholder" value="'Not Available"></parameter>
+		<parameter name="taxpayertype" value="Taxpayer Type"></parameter>
+		<parameter name="taxpayerplaceholder" value="Regular"></parameter>
+		<parameter name="bpeditbutton" value="EDIT"></parameter>
+		<parameter name="vintagetenure" value="Business Vintage (years)"></parameter>
+		<parameter name="ownershipprop" value="Ownership of Property"></parameter>
+		<parameter name="ownershipicon" value="Own"></parameter>
+		<parameter name="ownericonrented" value="Rented"></parameter>
+		<parameter name="sucessplantexst" value="Succession Plan"></parameter>
+		<parameter name="yestext" value="YES"></parameter>
+		<parameter name="businesslocationtext" value="Location"></parameter>
+		<parameter name="natureofbusiness" value="Nature of Business"></parameter>
+		<parameter name="GSTNumber" value="GST Number"></parameter>
+		<parameter name="doi" value="DOI"></parameter>
+		<parameter name="legalName" value="Legal Name"></parameter>
+		<parameter name="tradeName" value="Trade Name"></parameter>
+		<parameter name="address" value="Address"></parameter>
+		<parameter name="census" value="Census Code"></parameter>
+		<parameter name="entity" value="Entity"></parameter>
+		<parameter name="source" value="Source"></parameter>
+		<parameter name="num" value="1"></parameter>
+		<parameter name="BPLegalNamePlaceholder" value="Lite Bean Corporation"></parameter>
+		
+		<parameter name="UMHText" value="User Management"></parameter>
+		<parameter name="BPUMNameText" value="NAME"></parameter>
+		<parameter name="BPUMNameTextValue" value="Bharat  Traders"></parameter>
+		<parameter name="BPMUMPhoneText" value="Mobile Number"></parameter>
+		<parameter name="BPMUMPhoneTextValue" value="919999222233"></parameter>
+		<parameter name="BPUMEmailText" value="Email ID"></parameter>
+		<parameter name="BPUMEmailTextValue" value="bharat@actyv.com"></parameter>
+		<parameter name="UMTableColname" value="NAME"></parameter>
+		<parameter name="UMTableColAccessText" value="ACCESS/ROLE"></parameter>
+		<parameter name="UMTableColPhoneNum" value="MOBILE NO."></parameter>
+		
+		<parameter name="Name" value="NAME"></parameter>
+		<parameter name="Access" value="ACCESS/ROLE"></parameter>
+		<parameter name="Mobile" value="MOBILE NO."></parameter>
+		<parameter name="actyvusermngmnttitle" value="User Management"></parameter>
+		<parameter name="createuser" value="CREATE USER"></parameter>
+		<parameter name="actyvrolemngmnttitle" value="Role Management" ></parameter>
+		<parameter name="RoleName" value ="Role Name"></parameter>
+		<parameter name="DisplayName" value ="Display Name"></parameter>
+		<parameter name="Permission" value ="Permission(s)"></parameter>
+		<parameter name="Action" value ="Action"></parameter>
+		<parameter name="SearchBarText" value ="Score"></parameter>
+		<parameter name="createrole" value ="CREATE ROLE"></parameter>
+		<parameter name="Edit" value="Edit"></parameter>
+		<parameter name="Delete" value="Delete"></parameter>
+		<parameter name="Contact" value="BUSINESS CONTACT NUMBER"></parameter>
+		<parameter name="Email" value="BUSINESS EMAIL"></parameter>
+		<parameter name="State" value="STATE"></parameter>
+		<parameter name="City" value="CITY"></parameter>
+		<parameter name="GST" value="GSTIN"></parameter>
+		<parameter name="Pan" value="BUSINESS PAN"></parameter>
+		<parameter name="Code" value="PARTY CODE"></parameter>
+		<parameter name="Status" value="APPLICATION STATUS"></parameter>
+		<parameter name="Constituency" value="CONSTITUENCY"></parameter>
+		<parameter name="Enterprisecontact" value="ENTERPRISE CONTACT"></parameter>
+		<parameter name="Actyvscore" value="ACTYV SCORE"></parameter>
+		<parameter name="AppId" value="APPLICATION ID"></parameter>
+		<parameter name="AppType" value="APPLICATION TYPE"></parameter>
+		<parameter name="StartDate" value="APPLICATION START DATE"></parameter>
+		<parameter name="AppLastUpdated" value="APPLICATION LAST UPDATED"></parameter>
+		<parameter name="Scoringdate" value="SCORING DATE"/>
+		<parameter name="dds" value="DUE DILIGENCE SCORE"/>
+		<parameter name="BusinessPartnerName" value="BUSINESS PARTNER NAME"/>
+		<parameter name="ReportsentDate" value ="REPORT SENT DATE"/>
+		<parameter name="ResponseDate" value ="RESPONSE DATE"/>
+		<parameter name="CurrentStatus" value ="CURRENT STATUS"/>
+		<parameter name="Action" value="ACTION"/>
+		<parameter name ="scoreOverview" value="Score Overview"/>
+		<parameter name="financial" value ="Financial"/>
+		<parameter name="nonfinancial" value="Non Financial"/>
+		<parameter name="overallScore" value="Overall Score"/>
+		<parameter name="SaveasDraft" value="SAVE AS DRAFT"/>
+		<parameter name="submit" value = "Submit"/>
+		<parameter name="DueDiligenceReport" value="Dealer Due Diligence Report - Review"/>
+		<parameter name="EHRdate" value="EHR Generation Date"/>
+		<parameter name="actyvBpMappingtitle" value="BP Application Mapping"/>
+		<parameter name="actyvBankApptitle" value="Admin Application View"/>
+		<parameter name= "SearchBarText" value="AXIS"/>
+		<parameter name="Bank" value="BANK"/>
+		<parameter name="BusinessPartner" value="BUSINESS PARTNER"/>
+		<parameter name="Enterprise" value="ENTERPRISE"/>
+		<parameter name="ProductName" value="PRODUCT NAME"/>
+		<parameter name="ProductFam" value="PRODUCT FAMILY"/>
+		<parameter name="LastDate" value ="LAST UPDATE"/>
+		<parameter name="ApprovedLimit" value="APPROVED LIMIT"/>
+		<parameter name="AvailableLimit" value="AVAILABLE LIMIT"/>
+		<parameter name="Status1" value="STATUS"/>
+		<parameter name="StartDate" value="START DATE"/>
+		<parameter name="SearchBarEnterpriseText" value="Apollo"/>
+		<parameter name="SearchBarBankText" value="Axis"/>
+		<parameter name="param1" value="Pending" />
+        <parameter name="param2" value="Initiated" />
+        <parameter name="param3" value="Completed" />
+        <parameter name="param4" value="Document Capture" />
+        <parameter name="param5" value="Rejected" />
+		<parameter name="SearchBarBusinessPartnerText" value="KVR Traders"/>
+		<parameter name="viewPagetitle" value="Z Solutions"/>
+		<parameter name="viewOverview" value="Overview"/>
+		<parameter name="viewHistory" value ="History"/>
+		<parameter name="viewDocs" value ="Documents"/>
+		<parameter name="viewactyvScore" value ="actyv Score"/>
+		<parameter name="BPDetails" value="Business Partner Details"></parameter>
+		<parameter name="doctitle" value="Document"/>
+		<parameter name="doctitle1" value="E-verification Status"/>
+		
+		<parameter name = "MDMRoleFilter" value="MDM"/>
+		
+		
+		<parameter name="applistText" value="Application List"/>
+		<parameter name="BpappEntname" value="Enterprise Name"/>
+		<parameter name="bplistypeTextss" value="Type"/>
+		<parameter name="bpappliststatus" value="STATUS"/>
+		<parameter name="applistStartText" value="START DATE"/>
+		<parameter name="bplastupdatedDate" value="LAST UPDATED DATE"/>
+		<parameter name="bpactionText" value="ACTION"/>
+		<parameter name="bpentnamevaluetext" value="XYZ Demo Enterprise"/>
+		<parameter name="bpcolTypeValueText" value="Onboarding gst"/>
+		<parameter name="bpcolstatusvaluetexts" value="Document Capture"/>
+		<parameter name="bpstartdatelistvaluetexst" value="Jun 26, 2023"/>
+		<parameter name="bpactionvalue" value="View"/>
+		
+		
+
+		<parameter name="PanCardValue" value="FRWPK5676L"/>
+		<parameter name="ItrUserName" value="DZPPP9277K"/>
+		<parameter name="ItrPassword" value="Office@123"/>	
+		<parameter name="GST_Number" value="27AMVPB3317Q2ZG"/>
+		<parameter name="SearchBarText" value="123456"/>
+		<parameter name="TestOTP" value="575757"/>
+		<parameter name="Password" value="Admin@12345"/>
+		
+		
+		<parameter name="Borrower" value= "Borrower"/>
+		<parameter name="RequestType" value ="Request Type"/>
+		
+		<parameter name="InvoiceApprovaltitle" value="Invoice Approval"></parameter>
+		<parameter name="Bp" value="BUSINESS PARTNER"></parameter>
+		<parameter name="totalInvoiceAmt" value="TOTAL INVOICE AMOUNT"></parameter>
+		<parameter name="totalPayableAmt" value="TOTAL PAYABLE AMOUNT"></parameter>
+		<parameter name="AvailableLimit" value="AVAILABLE PAYLATER LIMIT"></parameter>
+		<parameter name="LimitStatus" value="LIMIT STATUS"></parameter>
+		<parameter name="aatl" value="AATL"></parameter>
+		<parameter name="ampl" value="AMPL"></parameter>
+		<parameter name="abpl" value="ABPL"></parameter>
+		<parameter name="all" value="--- ALL ---"></parameter>
+		<parameter name="BusinessPartnerTextdrop" value = "Shri Durga Metalex"/>
+		<parameter name="codeTextdrop" value = "All"/>
+		<parameter name="ERPId" value="ERP Id"></parameter>
+		<parameter name="InvoiceNo" value="INVOICE NO."></parameter>
+		<parameter name="InvoiceDate" value="INVOICE DATE"></parameter>
+		<parameter name="DueDate" value="DUE DATE"></parameter>
+		<parameter name="InvoiceAmt" value = "INVOICE AMOUNT"/>
+		<parameter name="limitstatusInvoice" value="Negative Amount"></parameter>
+		<parameter name="limitstatusInvoice1" value="Within Limit"></parameter>
+		<parameter name="BusinessPart" value="BUSINESS PARTNER"></parameter>
+		<parameter name="TotInvoiceAmt" value="TOTAL INVOICE AMOUNT"></parameter>
+		<parameter name="TotalPayAmt" value="TOTAL PAYABLE AMOUNT"></parameter>
+		<parameter name="AvailablePaylateLimit" value="AVAILABLE PAYLATER AMOUNT"></parameter>
+		<parameter name="Limit" value="LIMIT STATUS"></parameter>
+		<parameter name="VendorApprovaltitle" value="Vendor Invoice Approval"></parameter>
+		<parameter name="BusinessPartnerTextdropVendor" value="Shri Durga Steels"/>
+		<parameter name="Filestitle" value="Invoice File Upload"></parameter>
+		<parameter name="FileName" value="File Name"></parameter>
+		<parameter name="IngestionDate" value="Ingestion Date"></parameter>
+		<parameter name="OnboardedBP" value="Onboarded Business Partner Invoices"></parameter>
+		<parameter name="Total" value="Total Invoices"></parameter>
+		<parameter name="ParseStatus" value="Parse Status"></parameter>
+		<parameter name="BankApptitle" value="Enterprises Bank Applications"></parameter>
+		<parameter name="Bankcol" value="Bank"></parameter>
+		<parameter name="Borrowercol" value="Borrower Type"></parameter>
+		<parameter name="SearchBarBankTextpl" value="SG Finserve"></parameter>
+		
+		<parameter name="Enterprisetitle" value="Enterprise Name"></parameter>
+		<parameter name="BPName" value="Business Partner Name"></parameter>
+		<parameter name="ERPTitle" value="ERP Id"></parameter>
+		<parameter name="InvoiceNoTitle" value="Invoice No."></parameter>
+		<parameter name="ReqAmtTitle" value="Request Amount"></parameter>
+		<parameter name="InvoiceAmtTitle" value="Invoice Amount"></parameter>
+		<parameter name="InvoiceDateTitle" value="Invoice Date"></parameter>
+		<parameter name="DrawdownDateTitle" value="Drawdown Date"/>
+		<parameter name="DisbursedAmtTitle" value="Disbursed Amount"></parameter>
+		<parameter name="InterestAmtTitle" value="Interest / Discount Amount"></parameter>
+		<parameter name="PenalAmtTitle" value="Penal Interest Amount"></parameter>
+		<parameter name="RepaymentDateTitle" value="Repayment Due Date"></parameter>
+		<parameter name="RepaidAmtTitle" value="Repaid Amount"></parameter>
+		<parameter name="BalanceTitle" value="Balance"></parameter>
+		<parameter name="BusinessTypeTitle" value="Business Partner Type"></parameter>
+		<parameter name="StatusTitle" value="Status"></parameter>
+		<parameter name="Distributor" value="Distributor"/>
+		<parameter name="Vendor" value ="Vendor"/>
+		<parameter name= "PLdrawdownActive" value="Active"/>
+		<parameter name="PLdrawdownInactive" value="Inactive"/>
+		<parameter name="All" value="ALL"></parameter>
+		<parameter name="Distributor1" value="DISTRIBUTOR"/>
+		<parameter name="Vendor1" value ="VENDOR"/>
+		<parameter name="ISBp" value="Business Partner"></parameter>
+		<parameter name="ISDueInvoices" value="Due Invoices"></parameter>
+		<parameter name="IStotalInvoice" value="Total Invoice Overdue"></parameter>
+		<parameter name="IStotalPLOverdue" value="Total PayLater Overdue"></parameter>
+		<parameter name="IStotalduetoday" value="Total Due Today"/>
+		<parameter name="ISduetomorrow" value ="Total Due Tomorrow"/>
+		<parameter name= "AvailableLimit" value="Available Limit"/>
+		<parameter name="ISPLOverdueAge" value="PayLater Overdue Age"/>
+		<parameter name="Amount" value="Amount"></parameter>
+		<parameter name="InvoiceDuedate" value="Invoice Due Date"></parameter>
+
+	<groups>	
+	<run>
+ <!--  <include name="Enterprise_Score" />
+ <include name="BusinessPartner_Score" />
+<include name="Enterprise_Go" />
+
+
+<include name="BusinessPartner_Go" />
+<include name="Admin_Score" />
+<include name="Admin_RoleManagement" />
+<include name="Admin_UserManagement"/>
+<include name="Admin_Addons"/>
+<include name="Admin_ReviewEHR"/>
+<include name="Admin_AddonsInbox"/>
+<include name="Admin_BankApp"/>
+<include name="Paylater_Enterprise"/>
+<include name="Admin_BusinessPartner"/>-->
+
+
+</run>
+</groups>
+<classes>
+			
+		
+			<!-- <class name="com.actyv.testClass.InviteBusinessPartnerPageTest" />
+			<class name="com.actyv.testClass.roleManagementPageTest" />
+			<class name="com.actyv.testClass.TerritoryManagementPageTest" />
+			<class name="com.actyv.testClass.UserManagementPageTest" />
+			 <class name="com.actyv.testClass.UserPreferencePageTest" />
+			<class name="com.actyv.testClass.ScoreEnterpriseTest" />
+			<class name="com.actyv.testClass.ActyvAdminScorePageTest" />
+			<class name="com.actyv.testClass.ActyvAdminUserManagementPageTest"></class>
+			<class name="com.actyv.testClass.ActyvAdminRoleManagementPageTest"></class>
+			<class name="com.actyv.testClass.ActyvAdminBusinessPartnerPageTest"></class>
+			<class name="com.actyv.testClass.ActyvAdminAddonsPageTest"></class>
+			<class name="com.actyv.testClass.ActyvAdminAddonsInboxPageTest"></class>
+			<class name="com.actyv.testClass.ActyvAdminReviewEHRPageTest"></class>
+			<class name="com.actyv.testClass.ActyvAdminBankAppPageTest"></class>
+			<class name="com.actyv.testClass.HomePageTest" />
+			<class name="com.actyv.testClass.LoginPageTest" />-->
+			<class name="com.actyv.testClass.DashboardPageTest" />
+			<!-- <class name="com.actyv.testClass.ApproverInboxPageTest" />
+			<class name="com.actyv.testClass.ApplicationListPageTest" />
+			
+			 	
+				<class name="com.actyv.testClass.BP_SignUpPageTest" />
+			<class name="com.actyv.testClass.BP_ApplicationListPageTest" />
+			<class name="com.actyv.testClass.BP_UserPreferencePageTest"/>
+			<class name="com.actyv.testClass.BP_DocumentVaultPageTest" /> 
+			<class name="com.actyv.testClass.BP_ApplicationDetailsPageTest" />
+			<class name="com.actyv.testClass.BP_BusinessPartnerSigninPageTest" />
+			<class name="com.actyv.testClass.BP_BusinessProfile_PageTest" />
+			
+			<class name="com.actyv.testClass.BP_HomePageTest" />
+			<class name="com.actyv.testClass.BP_UserManagementPageTest" />
+			<class name="com.actyv.testClass.PaylaterEnterpriseInvoiceApprovalPageTest" />
+			<class name="com.actyv.testClass.BP_SignUpPageTest" />
+			<class name="com.actyv.testClass.BP_ApplicationListPageTest" />
+			<class name="com.actyv.testClass.BP_UserPreferencePageTest"/>
+			<class name="com.actyv.testClass.BP_DocumentVaultPageTest" /> 
+			<class name="com.actyv.testClass.BP_ApplicationDetailsPageTest" />
+			<class name="com.actyv.testClass.BP_BusinessPartnerSigninPageTest" />
+			<class name="com.actyv.testClass.BP_BusinessProfile_PageTest" />
+			
+			<class name="com.actyv.testClass.BP_HomePageTest" />
+			<class name="com.actyv.testClass.BP_UserManagementPageTest" />
+			<class name="com.actyv.testClass.PaylaterEnterpriseVendorApprovalPageTest" />
+			<class name="com.actyv.testClass.PaylaterEnterpriseFilesPageTest" />
+			 <class name="com.actyv.testClass.PaylaterEnterpriseDrawdownPageTest" />
+<class name="com.actyv.testClass.PaylaterEnterpriseInvoiceSumPageTest"/>-->
+		</classes>
+			
+	</test> <!-- Test -->
+
+
+</suite> <!-- Suite -->

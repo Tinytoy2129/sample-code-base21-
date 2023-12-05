@@ -1,0 +1,19 @@
+1. Login to Bancs
+2. Choose CG2 in admin type
+3. Choose claim option
+4. Choose auto option
+5. In claim Intimation--> fill mandatory policy details
+6. Fill loss information
+7. click save
+6. Enter values in remarks and click save
+ (claim saved successfully)
+7. Click register button
+8. Fill mandatory details
+9. fill Claim amount details
+9. fill mandatory driver details
+10. Minimise court details
+11. Click register button
+12.Click success botton
+13.click ok button
+
+		
